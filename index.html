@@ -13,51 +13,66 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        .gradient-text {
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #EEF2FF 0%, #F5F3FF 100%);
+        }
     </style>
 </head>
 <body class="bg-gradient-to-b from-gray-50 to-gray-100 text-gray-900 min-h-screen">
 
     <!-- Header -->
     <header class="text-center p-8 bg-white shadow-sm">
-        <h1 class="text-4xl font-bold text-blue-600 mb-2">🔥 HashCode Connect</h1>
+        <h1 class="text-4xl font-bold gradient-text mb-2">🔥 HashCode Connect</h1>
         <p class="text-sm text-gray-600">La plateforme intelligente de ta communauté tech préférée</p>
     </header>
 
-    <!-- Introduction -->
-    <section class="text-center px-4 py-16 max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Lancement officiel : Juillet 2025 🎉
-        </h2>
-        <p class="text-xl text-gray-700 leading-relaxed">
-            Prépare-toi à vivre une expérience unique : profils intelligents, mentorat, missions communautaires, et suivi personnalisé.
-        </p>
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                Lancement officiel : Juillet 2025 🎉
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
+                Prépare-toi à vivre une expérience unique : profils intelligents, mentorat, missions communautaires, et suivi personnalisé.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#inscription" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105">
+                    S'inscrire maintenant
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- Pourquoi s'inscrire -->
-    <section class="bg-white py-12 px-8 max-w-4xl mx-auto rounded-xl shadow-lg mb-12">
-        <h3 class="text-2xl font-semibold mb-8 text-center">✨ Pourquoi s'inscrire dès maintenant ?</h3>
+    <section class="bg-white py-16 px-8 max-w-4xl mx-auto rounded-xl shadow-lg my-12">
+        <h3 class="text-3xl font-bold mb-12 text-center gradient-text">✨ Pourquoi s'inscrire dès maintenant ?</h3>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center p-4">
-                <div class="text-3xl mb-4">🎯</div>
-                <h4 class="font-semibold mb-2">Accès Prioritaire</h4>
+            <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300">
+                <div class="text-4xl mb-4">🎯</div>
+                <h4 class="font-semibold text-lg mb-3">Accès Prioritaire</h4>
                 <p class="text-gray-600">Soyez parmi les premiers à découvrir la plateforme</p>
             </div>
-            <div class="text-center p-4">
-                <div class="text-3xl mb-4">👨‍🏫</div>
-                <h4 class="font-semibold mb-2">Orientation Personnalisée</h4>
+            <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300">
+                <div class="text-4xl mb-4">👨‍🏫</div>
+                <h4 class="font-semibold text-lg mb-3">Orientation Personnalisée</h4>
                 <p class="text-gray-600">Un parcours adapté à votre niveau</p>
             </div>
-            <div class="text-center p-4">
-                <div class="text-3xl mb-4">🚀</div>
-                <h4 class="font-semibold mb-2">Communauté Active</h4>
+            <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300">
+                <div class="text-4xl mb-4">🚀</div>
+                <h4 class="font-semibold text-lg mb-3">Communauté Active</h4>
                 <p class="text-gray-600">Formations, missions et réseau tech</p>
             </div>
         </div>
     </section>
 
     <!-- Formulaire Tally -->
-    <section class="py-12 px-4 max-w-4xl mx-auto">
-        <h4 class="text-center text-2xl font-bold mb-8">📩 Préinscription gratuite</h4>
+    <section id="inscription" class="py-16 px-4 max-w-4xl mx-auto">
+        <h4 class="text-center text-3xl font-bold mb-8 gradient-text">📩 Préinscription gratuite</h4>
         <div class="bg-white rounded-xl shadow-lg p-6">
             <iframe 
                 data-tally-src="https://tally.so/embed/wv1KOX?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
@@ -77,10 +92,10 @@
         <div class="max-w-4xl mx-auto">
             <p class="mb-4">© 2025 HashCode. Tous droits réservés.</p>
             <div class="flex justify-center space-x-4">
-                <a href="#" class="text-blue-500 hover:text-blue-600">Contact</a>
-                <a href="#" class="text-blue-500 hover:text-blue-600">Mentions légales</a>
-                <a href="#" class="text-blue-500 hover:text-blue-600">Twitter</a>
-                <a href="#" class="text-blue-500 hover:text-blue-600">LinkedIn</a>
+                <a href="#" class="text-blue-500 hover:text-blue-600 transition duration-300">Contact</a>
+                <a href="#" class="text-blue-500 hover:text-blue-600 transition duration-300">Mentions légales</a>
+                <a href="#" class="text-blue-500 hover:text-blue-600 transition duration-300">Twitter</a>
+                <a href="#" class="text-blue-500 hover:text-blue-600 transition duration-300">LinkedIn</a>
             </div>
         </div>
     </footer>
